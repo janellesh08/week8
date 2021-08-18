@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    text-align: center;
+    border: coral solid 3px;
+}
+
+#everything{
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    border-bottom: black solid 2px;
+}
+
+li{
+    border-bottom: black solid 2px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
