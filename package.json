@@ -1,7 +1,6 @@
 {
   "name": "day3",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
+    "express-mustache": "^1.0.4",
+    "express-session": "^1.17.2",
+    "pg-promise": "^10.11.0",
     "sequelize": "^6.6.5"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

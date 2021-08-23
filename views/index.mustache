@@ -11,7 +11,12 @@
 
 <body>
     <div id="everything">
-        <h1>My Favorite Movies</h1>
+        <img id="logo" src="../images/MoveMe.png" alt="">
+
+        <form id="logout" action="/logout" method="GET">
+            <button>Log out</button>
+        </form>
+
         <form action="/movies/create" method="POST">
             <h4>Add new movie</h4>
             <input type="text" name="title" placeholder="Movie title">
@@ -26,7 +31,7 @@
                 <option value="Fantasy">Fantasy</option>
                 <option value="Musical">Musical</option>
             </select>
-            <input type="text" name="posterURL" id="posterURL" placeholder="Poster URL">
+            <input type="text" name="poster" id="posterURL" placeholder="Poster URL">
             <button id="submitBtn">Submit</button>
         </form>
 
@@ -36,11 +41,12 @@
             <li>
                 <form action="/delete-movie" method="POST">
                 <div>
+                    <input type="hidden" name="movie_id" value="{{movie_id}}">
                     <h4>{{title}}</h4>
                     <button class="deleteBtn">Delete</button>
                         <input type="hidden" name="movieId" value={{movieId}}>
                 </div>
-                <a href="/movies/{{movieId}}"><img src="{{posterURL}}" alt=""></a>
+                <a href="/movies/{{movie_id}}"><img src="{{poster}}" alt=""></a>
                 <h6>{{genre}}</h6>
                 </form>
             </li>

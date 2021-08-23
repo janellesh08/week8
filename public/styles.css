@@ -1,26 +1,62 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: bisque;
+    background-color: black;
     text-align: center;
-    border: coral solid 3px;
+    border: white solid 3px;
+    color: white;
+    padding-bottom: 250px;
 }
 
 #everything{
-    margin: auto;
+    margin: 100px;
     text-align: center;
 }
 
-h1{
-    border-bottom: black solid 2px;
+#logoDetail{
+    margin: auto;
+    border-bottom: dashed white 2px;
+    height: 300px;
+    width: 350px;
+}
+
+#logo{
+    border-bottom: white dashed 2px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 300px;
+    width: 350px;
 }
 
 li{
-    border-bottom: black solid 2px;
+    border-bottom: white solid 2px;
 }
 
 img{
     height: 200px;
     width: 200px;
+    margin: auto;
 }
 
+#registerDiv{
+    margin-top: 50px;
+}
+
+#loginForm{
+    padding-bottom: 200px;
+}
+
+
+#logout{
+    padding-top: 20px;
+}
+
+#movieList{
+    margin: auto;
+    text-align: center;
+    padding-right: 47px;
+}
+
+.deleteBtn{
+    margin: 15px;
+}
