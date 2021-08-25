@@ -11,6 +11,7 @@ body{
 #everything{
     margin: 100px;
     text-align: center;
+    margin-top: 30px;
 }
 
 #logoDetail{
@@ -24,6 +25,7 @@ body{
     border-bottom: white dashed 2px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 0px;
     height: 300px;
     width: 350px;
 }
@@ -39,11 +41,11 @@ img{
 }
 
 #registerDiv{
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
 #loginForm{
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 
@@ -59,4 +61,20 @@ img{
 
 .deleteBtn{
     margin: 15px;
+}
+
+#registrationForm{
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-right: 250px;
+    justify-content: space-around;
+}
+
+.formBox{
+    margin: 3px;
+}
+
+#homeBtn{
+    padding-top: 10px;
 }

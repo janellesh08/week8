@@ -15,12 +15,14 @@
         <button>Log out</button>
     </form>
 {{#allMovies}}
+<form action="/delete-movie" method="POST">
     <h2>{{title}}</h2>
     <img src="{{poster}}" alt="">
-    <form action="/delete-movie" method="POST"><button class="deleteBtn">Delete</button></form>
+    <button class="deleteBtn">Delete</button>
     <input type="hidden" name="movie_id" value="{{movie_id}}">
     <H4>{{description}}</H4>
-    <form action="/logout" method="GET">
+</form>
+    <form action="/movies" method="GET" id="homeBtn">
         <button>Home</button>
     </form>
     {{/allMovies}}

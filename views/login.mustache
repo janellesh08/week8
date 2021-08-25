@@ -15,19 +15,19 @@
 
         <form action="/login" method="POST" id="loginForm">
             <h4>Log in</h4>
+            <input type="hidden" name="user_id" value="{{user_id}}">
             <input type="text" placeholder="username" name="username">
             <input type="password" placeholder="password" name="password">
             <button id="loginSubmitBtn">Go</button>
         </form>
 
         {{errorMessage}}
+        {{message}}
 
         <div id="registerDiv">
-            <form action="/register" method="POST">
-                <h4>Register here</h4>
-                <input type="text" name="newUsername" id="usernameTextBox" placeholder="username">
-                <input type="password" name="newPassword" id="passwordTextBox" placeholder="password">
-                <button>Register</button>
+            <form action="/register" method="GET">
+                <h4>No account??</h4>
+               <button>Create one!</button>
             </form>
         </div>
     </div>
